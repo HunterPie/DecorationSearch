@@ -1,0 +1,8 @@
+.fake
+.ionide
+.vs
+bin
+obj
+packages
+
+x64
