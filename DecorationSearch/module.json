@@ -2,5 +2,11 @@
   "Name": "DecorationSearch",
   "Description": "Lets you search for decorations",
   "Author": "Haato",
-  "Version": ""
+  "Version": "",
+  "DisplayName": "Decoration Search",
+  "Dependencies": [],
+  "Update": {
+    "UpdateUrl": "https://github.com/Haato3o/DecorationSearcher/releases/latest/download/",
+    "MinimumVersion": "1.0.5.0"
+  }
 }
