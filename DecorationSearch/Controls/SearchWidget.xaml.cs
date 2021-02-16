@@ -28,7 +28,9 @@ namespace DecorationSearch.Controls
                                              WindowsHelper.SWP_WINDOWN_FLAGS.SWP_NOMOVE);
 
         public override uint RenderFlags => (uint)(WindowsHelper.EX_WINDOW_STYLES.WS_EX_TOPMOST);
-        
+
+        public override bool ShouldHideWhenUnfocused => false;
+
         public SearchWidget()
         {
             WidgetActive = true;
