@@ -7,6 +7,8 @@ using HunterPie.Core;
 using HunterPie.Core.Events;
 using HunterPie.GUI;
 using HunterPie.Memory;
+using HunterPie.Logger;
+using HunterPie.Core.Input;
 
 namespace DecorationSearch
 {

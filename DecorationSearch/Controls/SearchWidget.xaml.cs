@@ -12,6 +12,8 @@ using HunterPie.Core.Native;
 using HunterPie.GUI;
 using HunterPie.Memory;
 using System.Threading.Tasks;
+using HunterPie.Core.Definitions;
+using HunterPie.Logger;
 
 namespace DecorationSearch.Controls
 {
@@ -88,9 +90,13 @@ namespace DecorationSearch.Controls
 
             if (Kernel.Write(decoArrayPtr, array))
             {
-                await VirtualInput.PressKey('N');
+                sKeyConfig keyConfig = PlayerKeyboard.Get((MenuControls)28);
+
+                char vkey = keyConfig.MainKey == 0 ? (char)keyConfig.SubKey : (char)keyConfig.MainKey;
+
+                await VirtualInput.PressKey(vkey);
                 await Task.Delay(10);
-                await VirtualInput.PressKey('N');
+                await VirtualInput.PressKey(vkey);
             }
         }
 
